@@ -1,0 +1,7 @@
+.header-container {
+  background-color: orange;
+}
+
+.header-title {
+  color: pink;
+}
