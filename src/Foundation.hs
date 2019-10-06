@@ -99,6 +99,7 @@ instance Yesod App where
     defaultLayout widget = do
         pc <- widgetToPageContent $ do
             addStylesheet $ StaticR css_reset_css
+            addStylesheet $ StaticR css_variables_css
             $(widgetFile "default-layout")
         withUrlRenderer $(hamletFile "templates/default-layout-wrapper.hamlet")
 
