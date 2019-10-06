@@ -98,6 +98,7 @@ instance Yesod App where
     defaultLayout :: Widget -> Handler Html
     defaultLayout widget = do
         pc <- widgetToPageContent $ do
+            addStylesheet $ StaticR css_fonts_css
             addStylesheet $ StaticR css_reset_css
             addStylesheet $ StaticR css_variables_css
             $(widgetFile "default-layout")

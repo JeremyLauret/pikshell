@@ -1,5 +1,5 @@
 /* Colors */
-html {
+:root {
   --main-bg-color: #333333;
   --main-theme-color: #FDC168;
   --color-white: #FFFFFF;
