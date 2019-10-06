@@ -1,0 +1,21 @@
+:root {
+  background-color: var(--main-bg-color);
+}
+
+.header-container {
+  padding: 10px 5px;
+}
+
+.header-title {
+  display: inline-block;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-white);
+  cursor: pointer;
+
+  &:hover {
+    transition: color 200ms;
+    color: var(--main-theme-color);
+  }
+}
